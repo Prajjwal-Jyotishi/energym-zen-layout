@@ -100,19 +100,20 @@
   }
 }
 
-/* Ken Burns zoom animation */
-@keyframes ken-burns {
-  0% { transform: scale(1); }
-  100% { transform: scale(1.08); }
+/* Smooth zoom-out Ken Burns animation */
+@keyframes ken-burns-zoom-out {
+  0% { transform: scale(1.15); }
+  100% { transform: scale(1); }
 }
 
 .animate-ken-burns {
-  animation: ken-burns 20s ease-in-out infinite alternate;
+  animation: ken-burns-zoom-out 8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  will-change: transform;
 }
 
 /* Bicep curl animation - one time zoom and slight shift */
 @keyframes bicep-curl {
-  0% { transform: scale(1) translateY(0); }
+  0% { transform: scale(1); }
   40% { transform: scale(1.06) translateY(-1%); }
   70% { transform: scale(1.03) translateY(-0.5%); }
   100% { transform: scale(1.02) translateY(0); }

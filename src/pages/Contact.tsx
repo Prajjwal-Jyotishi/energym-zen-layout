@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import PageSection from "@/components/PageSection";
+import contactBg from "@/assets/contact-bg.jpg";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
-    <PageSection className="bg-obsidian">
+    <PageSection backgroundImage={contactBg}>
       <div className="container mx-auto px-4 py-32">
         <h1 className="font-display font-black text-5xl md:text-7xl uppercase tracking-extreme text-center text-foreground mb-4">
           Contact
@@ -17,14 +18,14 @@ const Contact = () => {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.3, duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="space-y-8"
           >
             {[
-              { icon: MapPin, label: "Location", value: "123 Elite Avenue, Downtown" },
-              { icon: Phone, label: "Phone", value: "+1 (555) 000-1234" },
+              { icon: MapPin, label: "Location", value: "170 & 171, Part 2, Scheme 78, Vijay Nagar, Indore" },
+              { icon: Phone, label: "Phone", value: "08770964099" },
               { icon: Mail, label: "Email", value: "hello@energym.com" },
-              { icon: Clock, label: "Hours", value: "Mon-Sun: 5AM - 11PM" },
+              { icon: Clock, label: "Hours", value: "24/7 — Open All Day, Every Day" },
             ].map((item) => (
               <div key={item.label} className="flex items-start gap-4">
                 <item.icon className="w-5 h-5 text-gold mt-1 flex-shrink-0" />
@@ -39,7 +40,7 @@ const Contact = () => {
           <motion.form
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0.4, duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="space-y-5"
           >
             <input

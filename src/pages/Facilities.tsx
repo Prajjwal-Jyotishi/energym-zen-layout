@@ -5,8 +5,7 @@ import { Dumbbell, Users, Heart, Zap, Shield } from "lucide-react";
 
 const facilities = [
   { icon: Dumbbell, title: "Elite Weight Room", desc: "10,000 sq ft of premium free weights and machines" },
-  { icon: Users, title: "Zumba Classes", desc: "High-energy Zumba sessions every Friday" },
-  { icon: Users, title: "Group Studios", desc: "Three dedicated studios for yoga, HIIT and boxing" },
+  { icon: Users, title: "Zumba Classes", desc: "Every Friday, 4:00 PM – 6:00 PM in our dedicated group studio" },
   { icon: Heart, title: "Sauna", desc: "Premium sauna for post-workout recovery and relaxation" },
   { icon: Zap, title: "Cardio Section", desc: "State-of-the-art treadmills, bikes and ellipticals" },
   { icon: Shield, title: "Private Training", desc: "Soundproofed 1-on-1 training suites" },
@@ -29,7 +28,7 @@ const Facilities = () => {
               key={f.title}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 + i * 0.1 }}
+              transition={{ delay: 0.3 + i * 0.1, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
               className="bg-card/60 border border-border rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 group"
             >
               <f.icon className="w-8 h-8 text-gold mb-4 group-hover:scale-110 transition-transform" />
