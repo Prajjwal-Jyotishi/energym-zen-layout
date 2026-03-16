@@ -39,10 +39,10 @@ const Membership = () => {
               ].map((stat, i) => (
                 <motion.div
                   key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5 + i * 0.1 }}
-                  className="bg-secondary rounded-xl p-5 text-center"
+                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ delay: 0.5 + i * 0.15, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+                  className="bg-background/80 rounded-xl p-5 text-center border border-border/50"
                 >
                   <stat.icon className="w-5 h-5 text-gold mx-auto mb-2" />
                   <p className="text-muted-foreground font-body text-xs uppercase tracking-wider">{stat.label}</p>
