@@ -49,7 +49,7 @@ const SubscriptionPlans = () => {
                 {plan.name}
               </h3>
               <div className="flex items-baseline gap-1 mb-6">
-                <span className="font-display font-black text-5xl text-foreground">${plan.price}</span>
+                <span className="font-display font-black text-5xl text-foreground">₹{plan.price}</span>
                 <span className="text-muted-foreground font-body text-sm">/mo</span>
               </div>
               <ul className="space-y-3 mb-8">
