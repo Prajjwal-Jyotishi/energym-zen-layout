@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 
 interface PageSectionProps {
   children: ReactNode;
@@ -9,6 +9,8 @@ interface PageSectionProps {
 }
 
 const PageSection = ({ children, className = "", backgroundImage, overlay = true }: PageSectionProps) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <section className={`relative min-h-screen flex items-center justify-center overflow-hidden bg-background ${className}`}>
       {backgroundImage && (
@@ -20,7 +22,8 @@ const PageSection = ({ children, className = "", backgroundImage, overlay = true
             loading="eager"
             decoding="async"
             draggable={false}
-            className="w-full h-full object-cover animate-ken-burns-smooth"
+            onLoad={() => setImageLoaded(true)}
+            className={`w-full h-full object-cover animate-ken-burns-smooth transition-opacity duration-700 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
           />
           {overlay && <div className="absolute inset-0 bg-background/45" />}
         </div>

@@ -87,10 +87,17 @@
     letter-spacing: 0.35em;
   }
   .glass-nav {
-    background: hsla(0, 0%, 8%, 0.22);
+    background: hsla(0, 0%, 8%, 0.10);
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
-    border: 1px solid hsla(0, 0%, 100%, 0.05);
+    border: 1px solid hsla(0, 0%, 100%, 0.04);
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
   .gold-gradient {
     background: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-light)));

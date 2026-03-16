@@ -19,7 +19,7 @@ const FloatingNav = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="fixed top-6 left-1/2 -translate-x-1/2 z-50 glass-nav rounded-full px-2 py-2 flex items-center gap-1"
+      className="fixed top-6 left-1/2 -translate-x-1/2 z-50 glass-nav rounded-full px-2 py-2 flex items-center gap-1 max-w-[92vw] overflow-x-auto scrollbar-hide"
     >
       {navItems.map((item) => {
         const isActive = location.pathname === item.path;
