@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import PageSection from "@/components/PageSection";
 import { User, CreditCard, Calendar, TrendingUp } from "lucide-react";
+import membershipBg from "@/assets/membership-bg.jpg";
 
 const Membership = () => {
   return (
-    <PageSection className="bg-charcoal">
+    <PageSection backgroundImage={membershipBg}>
       <div className="container mx-auto px-4 py-32">
         <h1 className="font-display font-black text-5xl md:text-7xl uppercase tracking-extreme text-center text-foreground mb-4">
           Membership
