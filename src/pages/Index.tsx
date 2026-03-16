@@ -11,7 +11,7 @@ const Index = () => {
           alt="ENERGYM bodybuilder"
           className="w-full h-full object-cover animate-bicep-curl"
         />
-        <div className="absolute inset-0 bg-obsidian/60" />
+        <div className="absolute inset-0 bg-obsidian/40" />
       </div>
 
       <div className="relative z-10 text-center px-4">

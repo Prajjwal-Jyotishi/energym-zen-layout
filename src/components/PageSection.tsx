@@ -19,7 +19,7 @@ const PageSection = ({ children, className = "", backgroundImage, overlay = true
             className="w-full h-full object-cover animate-ken-burns"
           />
           {overlay && (
-            <div className="absolute inset-0 bg-obsidian/70" />
+            <div className="absolute inset-0 bg-obsidian/50" />
           )}
         </div>
       )}
