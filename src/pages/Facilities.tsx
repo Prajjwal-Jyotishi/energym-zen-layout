@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import PageSection from "@/components/PageSection";
 import facilitiesImage from "@/assets/facilities-gym.jpg";
-import { Dumbbell, Waves, Users, Heart, Zap, Shield } from "lucide-react";
+import { Dumbbell, Users, Heart, Zap, Shield } from "lucide-react";
 
 const facilities = [
   { icon: Dumbbell, title: "Elite Weight Room", desc: "10,000 sq ft of premium free weights and machines" },
