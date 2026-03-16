@@ -16,10 +16,10 @@ const Membership = () => {
 
         <div className="max-w-3xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="bg-card border border-border rounded-2xl p-10"
+            initial={{ opacity: 0, y: 40, scale: 0.97 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ delay: 0.3, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="bg-background border border-border rounded-2xl p-10"
           >
             <div className="flex items-center gap-4 mb-8 pb-8 border-b border-border">
               <div className="w-16 h-16 rounded-full gold-gradient flex items-center justify-center">
