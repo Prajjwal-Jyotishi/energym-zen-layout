@@ -109,3 +109,15 @@
 .animate-ken-burns {
   animation: ken-burns 20s ease-in-out infinite alternate;
 }
+
+/* Bicep curl animation - one time zoom and slight shift */
+@keyframes bicep-curl {
+  0% { transform: scale(1) translateY(0); }
+  40% { transform: scale(1.06) translateY(-1%); }
+  70% { transform: scale(1.03) translateY(-0.5%); }
+  100% { transform: scale(1.02) translateY(0); }
+}
+
+.animate-bicep-curl {
+  animation: bicep-curl 3s ease-in-out 0.5s 1 forwards;
+}
