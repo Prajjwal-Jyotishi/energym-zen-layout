@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import PageSection from "@/components/PageSection";
 import facilitiesImage from "@/assets/facilities-gym.jpg";
-import { Dumbbell, Waves, Users, Heart, Zap, Shield } from "lucide-react";
+import { Dumbbell, Users, Heart, Zap, Shield } from "lucide-react";
 
 const facilities = [
   { icon: Dumbbell, title: "Elite Weight Room", desc: "10,000 sq ft of premium free weights and machines" },
-  { icon: Waves, title: "Infinity Pool", desc: "25m heated pool with underwater lighting" },
+  { icon: Users, title: "Zumba Classes", desc: "High-energy Zumba sessions every Friday" },
   { icon: Users, title: "Group Studios", desc: "Three dedicated studios for yoga, HIIT and boxing" },
-  { icon: Heart, title: "Recovery Suite", desc: "Cryotherapy, sauna, and cold plunge pools" },
-  { icon: Zap, title: "Performance Lab", desc: "VO2 max testing and body composition analysis" },
+  { icon: Heart, title: "Sauna", desc: "Premium sauna for post-workout recovery and relaxation" },
+  { icon: Zap, title: "Cardio Section", desc: "State-of-the-art treadmills, bikes and ellipticals" },
   { icon: Shield, title: "Private Training", desc: "Soundproofed 1-on-1 training suites" },
 ];
 

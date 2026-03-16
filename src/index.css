@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
+    --background: 0 0% 0%;
     --foreground: 0 0% 96%;
 
     --card: 0 0% 10%;
@@ -38,7 +38,7 @@
 
     --gold: 43 56% 52%;
     --gold-light: 43 56% 65%;
-    --obsidian: 0 0% 4%;
+    --obsidian: 0 0% 0%;
     --charcoal: 0 0% 10%;
 
     --font-display: 'Montserrat', sans-serif;

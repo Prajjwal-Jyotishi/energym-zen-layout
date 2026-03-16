@@ -4,20 +4,20 @@ import subscriptionImage from "@/assets/subscription-bodybuilder.jpg";
 
 const plans = [
   {
-    name: "BRONZE",
-    price: "29",
+    name: "1 MONTH",
+    price: "1,500",
     features: ["Access to gym floor", "Locker room access", "2 group classes/week", "Basic fitness assessment"],
   },
   {
-    name: "SILVER",
-    price: "59",
-    features: ["All Bronze benefits", "Unlimited group classes", "Sauna & steam room", "1 PT session/month", "Nutrition guidance"],
+    name: "1 QUARTER",
+    price: "4,500",
+    features: ["All Monthly benefits", "Unlimited group classes", "Sauna access", "1 PT session/month", "Nutrition guidance"],
     featured: true,
   },
   {
-    name: "GOLD",
-    price: "99",
-    features: ["All Silver benefits", "4 PT sessions/month", "Priority booking", "Recovery suite access", "Exclusive member events"],
+    name: "1 YEAR",
+    price: "8,000",
+    features: ["All Quarterly benefits", "4 PT sessions/month", "Priority booking", "Sauna access", "Exclusive member events"],
   },
 ];
 
@@ -49,7 +49,7 @@ const SubscriptionPlans = () => {
                 {plan.name}
               </h3>
               <div className="flex items-baseline gap-1 mb-6">
-                <span className="font-display font-black text-5xl text-foreground">${plan.price}</span>
+                <span className="font-display font-black text-5xl text-foreground">₹{plan.price}</span>
                 <span className="text-muted-foreground font-body text-sm">/mo</span>
               </div>
               <ul className="space-y-3 mb-8">
