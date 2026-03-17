@@ -22,4 +22,12 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+  <!-- ...existing code... -->
+<script type="text/javascript">
+  // Redirect all requests to index.html for client-side routing
+  if (location.pathname !== '/energym-zen-layout/' && !location.pathname.startsWith('/energym-zen-layout/assets')) {
+    location.replace('/energym-zen-layout/');
+  }
+</script>
+<!-- ...existing code... -->
 </html>
